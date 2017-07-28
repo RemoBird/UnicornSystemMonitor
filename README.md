@@ -1,6 +1,6 @@
 # UnicornSystemMonitor
 
-##Currently System means Temperature ;-)
+## Currently System means Temperature ;-)
 
 Uses Pimoroni 8x8 Unicorn HAT to display current RaspberryPi temperature
 
