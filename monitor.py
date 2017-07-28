@@ -22,7 +22,7 @@ curv=[0,0,0,0,0,0,0,0] # array with temperature history
 
 while True:
 	print(cpu.temperature)
-        time.sleep(2)
+        #time.sleep(2)
 	pegel = int((cpu.temperature-t_min)/t_steps)-1
 	print(pegel)
 	curv.insert(0,pegel) # insert latest data
@@ -32,6 +32,6 @@ while True:
 		#print(i)
 		#print(curv[i])
 		for j in range(0, curv[i]):
-			unicorn.set_pixel(i,j,256,0,128)
-        	unicorn.set_pixel(i,curv[i],0,255,0)
+			unicorn.set_pixel(i,j,255,0,0)
+        	unicorn.set_pixel(i,curv[i],220,220,0)
 	unicorn.show()
